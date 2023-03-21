@@ -6,8 +6,7 @@ let {
 let axios = require("axios");
 
 
-export default async function handler(req, res) {
-
+module.exports = async function handler(req, res) {
     try {
         let url = "https://jsonplaceholder.typicode.com/users";
         let {

@@ -13,7 +13,7 @@ const schema = joi.object({
     alias: joi.string().required()
 });
 
-export default async function handler(req, res) {
+module.export = async function handler(req, res) {
     if (req.method == 'POST') {
         try {
             let validate = schema.validate(req.body);
